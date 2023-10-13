@@ -11,5 +11,8 @@
 
 
 let teamSports = ['Hockey', 'Cricket', 'Volleyball'];
+let moreSports = ['Rowing', 'Skiing', 'Skydiving'];
 let dog1 = 'Bingo';
+let dog2 = 'Dingo';
 let cat1 = { name: 'Fluffy', breed: 'Siberian' };
+let cat2 = { name: 'Garfield', breed: 'Orange'};

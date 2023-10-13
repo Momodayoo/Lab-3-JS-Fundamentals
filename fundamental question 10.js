@@ -10,9 +10,14 @@
 
 
 
-if the person is old enough to drive.
+//if the person is old enough to drive.
 function Person(name, age) {
-this.name = name;
-this.age = age;
-this.human = true;
+    this.name = name;
+    this.age = age;
+    this.human = true;
+    this.hasDriversLicense = () => this.name.length <=4;
 }
+
+    hasShortName() {
+        return this.name.length >= 3
+    }

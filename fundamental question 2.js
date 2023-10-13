@@ -1,30 +1,32 @@
-const { DamerauLevenshteinDistance } = require("natural")
+//2. Which of the below are not giving the right answer? Why are they not correct? How can we fix them?
 
-let three = "3"
-let four = "4"
-let thirty = "30"
+//let three = "3";
+//let four = "4";
+//let thirty = "30";
 
-// remove quotation mark on 3 and 4 so the math equation is correct 
+// 3 and 4 have quotation mark on them. removing it will give an accurate mathematical calculation
 
-<!DOCTYPE html>
-<script> 
-
-let three = 3; 
+let three = 3;
 let four = 4;
-
 let thirty = "30";
 
-alert(three + four); // 3
-</script>
-
-
 // what is the value of the following expressions?
-QUESTIONS                                   ANSWER
-let addition = three + four                 4
-let multiplication = three * four           12    
-let division = three / four                 3/4 = 0.75
-let subtraction = three - four              -1
 
-let lessThan1 = three < four                true
-let lessThan2 = thirty < four               false
+let addition = three + four 
+console.log(addition)               // 7
+
+let multiplication = three * four 
+console.log (multiplication)         // 12   
+
+let division = three / four
+console.log(division)                // 3/4 = 0.75
+
+let subtraction = three - four 
+console.log(subtraction)            // -1
+
+let lessThan1 = three < four 
+console.log(lessThan1)              // true
+
+let lessThan2 = thirty < four; 
+console.log(lessThan2);             // false
 
