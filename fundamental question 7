@@ -11,27 +11,43 @@
 
 const basketballGame = {
     score: 0,
+    fouls:0,
     freeThrow() {
-        console.log(this.score++)
+        this.score++
         return this;
     },
+    recordFoul() {
+        console.log ("this is fouls" + this.fouls++) 
+   return this;
+    },
     basket() {
-        console.log(this.score += 2)
+        this.score += 2
         return this;
     },
     threePointer() {
-        console.log(this.score += 3)
+        this.score += 3
         return this;
     },
     halfTime() {
-        console.log('Halftime score is '+this.score);
+        console.log('Halftime score is '+this.score + ".Number of fouls: " + this.fouls);
+        return this;
     },
-    //fullTime() {
-        //console.log('Fulltime score is '+this.score +this.score); 
-    //}
-   // numberFoul() {
-    //    console.log(this.score -= 2)
-     //   return this;
+
+    fullTime() {
+        console.log('Fulltime score is '+this.score +this.score + ".Number of fouls: " + this.fouls);
+        return this; 
+    }   
+  
 }
 //modify each of the above object methods to enable function chaining as below:
-basketballGame.basket().freeThrow().freeThrow().basket().threePointer();//.halfTime().fullTime();.numberFoul();
+basketballGame
+    .basket()
+    .freeThrow()
+    .recordFoul()
+    .freeThrow()
+    .basket()
+    .threePointer()
+    .recordFoul()
+    .halfTime()
+    .fullTime()
+    

@@ -11,8 +11,24 @@
 
 
 let teamSports = ['Hockey', 'Cricket', 'Volleyball'];
-let moreSports = ['Rowing', 'Skiing', 'Skydiving'];
 let dog1 = 'Bingo';
-let dog2 = 'Dingo';
 let cat1 = { name: 'Fluffy', breed: 'Siberian' };
-let cat2 = { name: 'Garfield', breed: 'Orange'};
+
+let moreSports = teamSports;
+
+let dog2 = dog1;
+
+dog2 = "Dingo";
+
+let cat2 = Object.assign ({},cat1);
+
+cat2.name = "Garfield";
+
+moreSports.push ('Rowing');
+moreSports.unshift ('Swimming');
+
+console.log (teamSports);
+console.log (dog1);
+console.log (dog2);
+console.log (cat1)
+console.log (cat2)

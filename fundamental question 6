@@ -18,18 +18,19 @@ const westley = {
     let greeting = `Hello ${person.name}, my name is ${this.firstName} ${this.lastName}. `;
     console.log(greeting + this.getCatchPhrase(person));
     },
-    getCatchPhrase(person) {
-        let greeting;
-         (person.numFingers === 6) ? greeting = 'Hello. My name is ${this.firstName} ${this.lastName}. You killed my father. Prepare to die.` ' 
-        } else{
-            greeting = 'Nice to meet you.';
-        }
-        return greeting;
+    getCatchPhrase(person){
+            let greeting;
+            if (person.numFingers === 6){
+                greeting = `You killed my father. Prepare to die.`  
+            } else {
+                greeting = "Nice to meet you.";
+            }
+            return greeting;
         },
-    }
+    };   
     inigo.greeting(westley)
     inigo.greeting(rugen)
 //{
     //const.getCatchPhrase = (inigo.greeting(westley), inigo.greeting(rugen)) =>  inigo.greeting(westley) + inigo.greeting(rugen) ;
 //console.log(getCatchPhrase());
-//}
+//
